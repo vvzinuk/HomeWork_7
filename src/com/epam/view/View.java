@@ -8,6 +8,4 @@ public class View{
     public void print (Object obj){
         System.out.println(obj.toString());
     }
-
-
 }
