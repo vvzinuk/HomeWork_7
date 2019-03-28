@@ -14,7 +14,7 @@ class Rectangle extends Shape {
         return "class = " + getClass().getSimpleName() + " : "  +
                "width = " + width + " : " +
                "height = " + height + " : " +
-               "area = " + calcArea() + "; \n";
+               "area = " + roundDouble( calcArea() ) + "; \n";
     }
 
     @Override

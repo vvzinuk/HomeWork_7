@@ -1,7 +1,7 @@
 package com.epam.model;
 
 public class Shape {
-    public Shape() {
+    Shape() {
     }
 
     @Override
@@ -11,5 +11,9 @@ public class Shape {
 
     public double calcArea(){
         return 0.0;
+    }
+
+    public static double roundDouble (double real){
+        return Math.round(real * 100.0) / 100.0;
     }
 }

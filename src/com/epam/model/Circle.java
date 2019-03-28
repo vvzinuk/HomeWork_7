@@ -11,7 +11,7 @@ class Circle extends Shape{
     public String toString() {
         return "class = " + getClass().getSimpleName() + " : " +
                 "radius = " + radius + " : " +
-                "area = " + calcArea() + "; \n";
+                "area = " + roundDouble( calcArea() ) + "; \n";
     }
 
     @Override

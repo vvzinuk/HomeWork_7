@@ -27,7 +27,7 @@ public class Shapes extends Shape {
         for (Shape index: array) {
             result += index.calcArea();
         }
-        return result;
+        return roundDouble( result );
     }
 
     public static double[] calcTotalAreaByShapes (){

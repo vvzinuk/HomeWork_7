@@ -17,7 +17,7 @@ class Triangle extends Shape {
                 "a = " + a + " : " +
                 "b = " + b + " : " +
                 "c = " + c + " : " +
-                "area = " + calcArea() + "; \n";
+                "area = " + roundDouble( calcArea() ) + "; \n";
     }
 
     @Override
