@@ -3,14 +3,14 @@ package com.epam.controller;
 import com.epam.model.Shapes;
 import com.epam.view.*;
 
-public class FigureMaster {
-    View view = new View();
-    Shapes shapes = new Shapes();
-    boolean status = true;
+public class FigureMaster implements Messages{
+    private View view = new View();
+    private Shapes shapes = new Shapes();
+    private boolean status = true;
 
     public void run(){
         while(status) {
-            view.print( Messages.MENU );
+            view.print( MENU );
             switcher( InputUtility.inputIntValueWithScanner( view ) );
         }
     }
@@ -21,10 +21,10 @@ public class FigureMaster {
                 view.print( shapes );
                 break;
             case 2:
-                view.print( shapes.calcArea() );
+                view.printWithLabel( TOTAL_AREA, shapes.calcArea() );
                 break;
             case 3:
-                shapes.printTotalAreaByShapes();
+                view.printTotalAreaByShapes();
                 break;
             case 4:
                 status = false;

@@ -19,5 +19,4 @@ public class Validator {
             System.out.println( "Message from view" );
         }
     }
-
 }

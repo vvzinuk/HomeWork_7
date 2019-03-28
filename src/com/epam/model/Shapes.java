@@ -1,9 +1,7 @@
 package com.epam.model;
 
-import java.util.Arrays;
-
 public class Shapes extends Shape {
-    Shape[] array = {new Rectangle( 20.8,4.9 ),
+    private static Shape[] array = {new Rectangle( 20.8,4.9 ),
             new Rectangle( 10,20 ),
             new Rectangle( 15.6,23.1 ),
             new Rectangle( 20,20.5 ),
@@ -32,7 +30,7 @@ public class Shapes extends Shape {
         return result;
     }
 
-    public double[] calcTotalAreaByShapes (){
+    public static double[] calcTotalAreaByShapes (){
         double[] result = new double[3];
         double circlesArea = 0;
         double rectanglesArea = 0;
@@ -50,11 +48,5 @@ public class Shapes extends Shape {
         result[1] = rectanglesArea;
         result[2] = trianglesArea;
         return result;
-    }
-
-    public void printTotalAreaByShapes (){
-        System.out.println("Circles total area is: " + calcTotalAreaByShapes()[0]);
-        System.out.println("Rectangles total area is: " + calcTotalAreaByShapes()[1]);
-        System.out.println("Triangles total area is: " + calcTotalAreaByShapes()[2]);
     }
 }
