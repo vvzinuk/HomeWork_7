@@ -1,6 +1,6 @@
 package com.epam.view;
 
-public class View implements Messages{
+public class View{
     public void print (Object obj){
         System.out.println(obj.toString());
     }
